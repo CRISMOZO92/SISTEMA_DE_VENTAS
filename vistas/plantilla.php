@@ -36,9 +36,36 @@
  <?php  
 
 include "modulos/cabecera.php";
+
+
 include "modulos/menu.php";
-include "modulos/usuarios.php";
+
+
+
+
+if (isset($_GET["ruta"])){
+
+  if (($_GET["ruta"] == "usuarios")||
+     ($_GET["ruta"] == "categorias")||
+     ($_GET["ruta"] == "clientes")||
+     ($_GET["ruta"] == "ventas")||
+     ($_GET["ruta"] == "productos") ) {
+
+    include "modulos/".$_GET["ruta"].".php";
+
+  }
+
+
+}else{
+
+  include "modulos/inicio.php";
+
+}
+
+
 include "modulos/footer.php";
+
+
 
   ?>
 
