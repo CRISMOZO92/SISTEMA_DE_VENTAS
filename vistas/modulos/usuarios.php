@@ -54,6 +54,45 @@
 
           <tbody>
 
+        <?php  
+        
+        $usuarios=ControladorUsuarios::ctrMostrarUsuarios();
+
+
+        foreach ($usuarios as $key => $value) {
+
+
+
+
+            
+
+
+
+        }
+          
+
+          
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        ?>
+
+
+
           <tr>
 
           <td>1</td>
