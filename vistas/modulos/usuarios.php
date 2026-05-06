@@ -62,63 +62,49 @@
         foreach ($usuarios as $key => $value) {
 
 
+          echo '
+
+          <tr>
+
+              <td>1</td>
+              <td>'.$value["nombre"].'</td>
+              <td>'.$value["usuario"].'</td>
+              <td><img src="'.$value["foto"].'" width="40px"></td>
+              <td>'.$value["perfil"].'</td>
+              <td><button class="btn btn-success btn-xs">activado</button></td>
+              <td>
+
+                  <div class="btn-group">
+
+                    <button class="btn btn-primary">
+
+                        <i class="fa fa-pencil"></i>
+                    </button>
+
+                    <button class="btn btn-danger">
+
+                        <i class="fa fa-times"></i>
+                    </button>
 
 
-            
+                  </div>
+              </td>
 
+          </tr>
+          
+          
+          
+          ';
 
 
         }
           
-
-          
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
+       
         ?>
 
 
 
-          <tr>
-
-          <td>1</td>
-          <td>Cristian</td>
-          <td>cmozo</td>
-          <td><img src="vistas/img/usuarios/cris.jpg" width="40px"></td>
-          <td>administrador</td>
-          <td><button class="btn btn-success btn-xs">activado</button></td>
-          <td>
-
-          <div class="btn-group">
-
-          <button class="btn btn-primary">
-            <i class="fa fa-pencil"></i>
-          </button>
-
-
-          <button class="btn btn-danger">
-            <i class="fa fa-times"></i>
-          </button>
-          </td>
-
-
-
-
-          </tr>
+          
 
           </tbody>
 
