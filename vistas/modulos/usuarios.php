@@ -157,7 +157,7 @@ MODAL AGREGAR USUARIO
                 CUERPO DEL MODAL
                 ======================================-->
 
-                <div class="modal-body">
+                <div class="modal-body">  
 
                     <div class="box-body">
 
