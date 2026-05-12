@@ -29,6 +29,12 @@ static public function mdlMostrarUsuarios($tabla){
 }
 
 
+static public function mdlIngresarUsuario($tabla,$datos){
+
+
+
+    
+}
 }
 
 
