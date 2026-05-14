@@ -14,8 +14,6 @@ class ControladorUsuarios {
 
     }
 
-}   
-
     /*==============================================
     Registrar Usuario
     ==============================================*/
@@ -130,6 +128,9 @@ class ControladorUsuarios {
                 }
             
             }
+}   
+
+    
 
 
 

@@ -43,6 +43,7 @@
               <th>Perfil</th>
               <th>estado</th>
               <th>Acciones</th>
+              <th>Fecha</th>
 
 
             </tr>
@@ -66,12 +67,12 @@
 
           <tr>
 
-              <td>1</td>
+              <td>'.$value["id"].'</td>
               <td>'.$value["nombre"].'</td>
               <td>'.$value["usuario"].'</td>
               <td><img src="'.$value["foto"].'" width="40px"></td>
               <td>'.$value["perfil"].'</td>
-              <td><button class="btn btn-success btn-xs">activado</button></td>
+              <td><button class="btn btn-success btn-xs">activo</button></td>
               <td>
 
                   <div class="btn-group">
@@ -89,6 +90,7 @@
 
                   </div>
               </td>
+              <td>'.$value["fecha"].'</td>
 
           </tr>
           
