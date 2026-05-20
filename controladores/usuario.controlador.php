@@ -115,12 +115,29 @@ class ControladorUsuarios {
                     $respuesta = ModeloUsuarios::mdlIngresarUsuario($tabla,$datos); 
                      
                     
-                    {
+                    if($respuesta == "ok"){ 
+
+
+                        echo "<script>
+
+                        swal.fire({
+                                title: 'se guardo correctamente el usuario',
+                                icon: 'success',
+                                }).then ((result) => {
+                                    
+                                    window.location = 'usuarios';
+
+                                })  
+                                    
+                                
+                        </script>";
+                                
+                    }
 
                         
 
 
-                    }
+                    
 
 
 
@@ -136,9 +153,6 @@ class ControladorUsuarios {
 
 
 ?>
-
-
-
 
 
 

@@ -29,7 +29,7 @@
           
         </div>
         <div class="box-body">
-          Start creating your amazing application!
+          
 
           <table class="table table-bordered table-striped dt-responsive tablas" whidth="100%">
 
@@ -103,10 +103,7 @@
           
        
         ?>
-
-
-
-          
+        
 
           </tbody>
 
@@ -233,7 +230,7 @@ MODAL AGREGAR USUARIO
 
                             <p class="help-block">Peso máximo de la foto 2MB</p> 
 
-                              <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" 
+                              <img src="vistas/img/usuarios/default/hermes.jpg" class="img-thumbnail" 
                               width="200px" height="200px">
                             
                         </div>
@@ -253,6 +250,15 @@ MODAL AGREGAR USUARIO
                     <button type="submit" class="btn btn-primary">Guardar usuario</button>
 
                 </div>
+
+
+                <?php
+                
+                
+                $crearUsuario = new ControladorUsuarios();
+                $crearUsuario -> ctrCrearUsuario();
+                
+                ?>
           
 
             </form>  
