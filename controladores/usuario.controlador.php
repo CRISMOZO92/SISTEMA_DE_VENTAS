@@ -20,7 +20,7 @@ class ControladorUsuarios {
 
     static public function ctrCrearUsuario(){
     
-        if(isset($_POST["nuevoNombre"])){
+        if(isset($_POST["nuevoNombre"]) && isset ($_POST["nuevoUsuario"])){
 
 
 
@@ -100,6 +100,10 @@ class ControladorUsuarios {
 
             }
                 
+                /*==============================================
+                la siguiente parte es para guardar la informacion del usuario en la base de datos
+                ==============================================*/
+
                 $tabla = "usuarios"; 
 
                 $encriptar = crypt($_POST["nuevoPassword"],'$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
