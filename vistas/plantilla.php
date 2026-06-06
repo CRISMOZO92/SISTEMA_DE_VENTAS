@@ -84,6 +84,13 @@ include "modulos/footer.php";
 <script src="vistas/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="vistas/dist/js/demo.js"></script>
+
+
+
+<script src="vistas/js/usuarios.js"></script>
+
+
+
 <script>
   $(document).ready(function () {
     $('.sidebar-menu').tree()

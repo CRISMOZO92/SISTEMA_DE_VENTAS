@@ -11,4 +11,8 @@ $plantilla = new ControladorPlantilla();
 $plantilla -> ctrplantilla();
 
 
+
+
+
 ?>
+
