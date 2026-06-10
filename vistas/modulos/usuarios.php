@@ -57,7 +57,10 @@
 
             <?php
 
-            $usuarios = ControladorUsuarios::ctrMostrarUsuarios();
+            $item = null;
+            $valor = null;
+
+            $usuarios = ControladorUsuarios::ctrMostrarUsuarios($item,$valor);
 
 
             foreach ($usuarios as $key => $value) {
