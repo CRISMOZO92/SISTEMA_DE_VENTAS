@@ -80,7 +80,7 @@
 
                   <div class="btn-group">
 
-                    <button class="btn btn-primary btnEditarUsuario" idUsuarios="'.$value["id"].'"data-toggle="modal" data-target="#modalEditarUsuario">
+                    <button class="btn btn-primary btnEditarUsuario" idUsuario="'.$value["id"].'"data-toggle="modal" data-target="#modalEditarUsuario">
 
                         <i class="fa fa-pencil"></i>
                     </button>
