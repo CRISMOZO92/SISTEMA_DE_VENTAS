@@ -60,7 +60,7 @@
             $item = null;
             $valor = null;
 
-            $usuarios = ControladorUsuarios::ctrMostrarUsuarios($item,$valor);
+            $usuarios = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
 
 
             foreach ($usuarios as $key => $value) {
@@ -80,12 +80,12 @@
 
                   <div class="btn-group">
 
-                    <button class="btn btn-primary btnEditarUsuario" idUsuario="'.$value["id"].'"data-toggle="modal" data-target="#modalEditarUsuario">
+                    <button class="btn btn-primary btnEditarUsuario" idUsuario="' . $value["id"] . '"data-toggle="modal" data-target="#modalEditarUsuario">
 
                         <i class="fa fa-pencil"></i>
                     </button>
 
-                    <button class="btn btn-danger btnEliminarUsuario" idUsuarios="'.$value["id"].'" fotoUsuario="'.$value["foto"].'" usuario="'.$value["usuario"].'">
+                    <button class="btn btn-danger btnEliminarUsuario" idUsuarios="' . $value["id"] . '" fotoUsuario="' . $value["foto"] . '" usuario="' . $value["usuario"] . '">
 
                         <i class="fa fa-times"></i>
                     </button>
@@ -227,7 +227,7 @@ MODAL AGREGAR USUARIO
 
               <p class="help-block">Peso máximo de la foto 2MB</p>
 
-              <img src="vistas/img/usuarios/default/hermes.jpg" class="img-thumbnail"
+              <img src="vistas/img/usuarios/default/hermes.jpg" class="img-thumbnail previsualizar"
                 width="200px" height="200px">
 
             </div>
@@ -299,102 +299,102 @@ MODAL EDITAR USUARIO
 
         <div class="modal-body">
 
-            <div class="box-body">
+          <div class="box-body">
 
-                <!-- ENTRADA PARA EL NOMBRE -->
-                <div class="form-group">
+            <!-- ENTRADA PARA EL NOMBRE -->
+            <div class="form-group">
 
-                    <div class="input-group">
+              <div class="input-group">
 
-                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
 
-                        <input type="text" class="form-control input-lg" id="editarNombre" 
-                            name="editarNombre" value="" required>
-                    </div>
-
-                </div>
-
-                <!-- ENTRADA PARA EL USUARIO -->
-                <div class="form-group">
-
-                    <div class="input-group">
-
-                        <span class="input-group-addon"><i class="fa fa-key"></i></span>
-
-                        <input type="text" class="form-control input-lg" id="editarUsuario" 
-                            name="editarUsuario" value="" required>
-                    </div>
-
-                </div>
-
-                <!-- ENTRADA PARA LA CONTRASEÑA -->
-
-                <div class="form-group">
-
-                    <div class="input-group">
-
-                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-
-                        <input type="password" class="form-control input-lg" name="editarPassword" 
-                            placeholder="Escriba la nueva contraseña">
-                        <input type="hidden" id="passwordActual" name="passwordActual">
-                    </div>
-                </div>
-
-                <!-- ENTRADA PARA SELECCIONAR SU PERFIL -->
-
-                <div class="form-group">
-
-                    <div class="input-group">
-
-                        <span class="input-group-addon"><i class="fa fa-users"></i></span>
-
-                        <select class="form-control input-lg" name="editarPerfil">
-
-                            <option value="" id="editarPerfil"></option>
-
-                            <option value="Administrador">Administrador</option>
-
-                            <option value="Especial">Especial</option>
-
-                            <option value="Vendedor">Vendedor</option>
-
-                        </select>
-                    </div>
-                </div>
-
-                <!-- ENTRADA PARA SUBIR FOTO -->
-
-                <div class="form-group">
-
-                    <div class="panel">SUBIR FOTO</div>
-
-                    <input type="file" id="editarFoto" name="editarFoto">
-
-                    <p class="help-block">Peso máximo de la foto 2MB</p>
-
-                    <img src="vistas/img/usuarios/default/hermes.jpg" class="img-thumbnail" width="100px">
-
-                    <input type="hidden" name="fotoActual" id="fotoActual">
-                    
-                </div>
+                <input type="text" class="form-control input-lg" id="editarNombre"
+                  name="editarNombre" value="" required>
+              </div>
 
             </div>
+
+            <!-- ENTRADA PARA EL USUARIO -->
+            <div class="form-group">
+
+              <div class="input-group">
+
+                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+
+                <input type="text" class="form-control input-lg" id="editarUsuario"
+                  name="editarUsuario" value="" required>
+              </div>
+
+            </div>
+
+            <!-- ENTRADA PARA LA CONTRASEÑA -->
+
+            <div class="form-group">
+
+              <div class="input-group">
+
+                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+
+                <input type="password" class="form-control input-lg" name="editarPassword"
+                  placeholder="Escriba la nueva contraseña">
+                <input type="hidden" id="passwordActual" name="passwordActual">
+              </div>
+            </div>
+
+            <!-- ENTRADA PARA SELECCIONAR SU PERFIL -->
+
+            <div class="form-group">
+
+              <div class="input-group">
+
+                <span class="input-group-addon"><i class="fa fa-users"></i></span>
+
+                <select class="form-control input-lg" name="editarPerfil">
+
+                  <option value="" id="editarPerfil"></option>
+
+                  <option value="Administrador">Administrador</option>
+
+                  <option value="Especial">Especial</option>
+
+                  <option value="Vendedor">Vendedor</option>
+
+                </select>
+              </div>
+            </div>
+
+            <!-- ENTRADA PARA SUBIR FOTO -->
+
+            <div class="form-group">
+
+              <div class="panel">SUBIR FOTO</div>
+
+              <input type="file" id="editarFoto" name="editarFoto">
+
+              <p class="help-block">Peso máximo de la foto 2MB</p>
+
+              <img src="vistas/img/usuarios/default/hermes.jpg" class="img-thumbnail previsualizar" width="100px">
+
+              <input type="hidden" name="fotoActual" id="fotoActual">
+
+            </div>
+
+          </div>
         </div>
 
         <!--=====================================
                 PIE DEL MODAL 
                 ======================================-->
 
-                <div class="modal-footer">
+        <div class="modal-footer">
 
-                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+          <button type="submit" class="btn btn-primary">Guardar cambios</button>
 
-                </div>
+        </div>
 
-                    
+
 
 
 
@@ -407,4 +407,3 @@ MODAL EDITAR USUARIO
   </div>
 
 </div>
-
